@@ -60,6 +60,7 @@ export function RunTabUI (props: RunTabProps) {
 
   useEffect(() => {
     initRunTab(plugin)(dispatch)
+    plugin.onInitDone()
   }, [plugin])
 
   useEffect(() => {
