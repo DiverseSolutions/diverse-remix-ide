@@ -24,6 +24,7 @@ import { Layout } from './app/panels/layout'
 import { NotificationPlugin } from './app/plugins/notification'
 import { Blockchain } from './blockchain/blockchain.js'
 import { HardhatProvider } from './app/tabs/hardhat-provider'
+import { GanacheProvider } from './app/tabs/ganache-provider'
 
 const isElectron = require('is-electron')
 
@@ -172,6 +173,7 @@ class AppComponent {
     // ----------------- represent the current selected web3 provider ----
     const web3Provider = new Web3ProviderModule(blockchain)
     const hardhatProvider = new HardhatProvider(blockchain)
+    const ganacheProvider = new GanacheProvider(blockchain)
     // ----------------- convert offset to line/column service -----------
     const offsetToLineColumnConverter = new OffsetToLineColumnConverter()
     Registry.getInstance().put({
@@ -225,6 +227,7 @@ class AppComponent {
       dGitProvider,
       storagePlugin,
       hardhatProvider,
+      ganacheProvider,
       this.walkthroughService,
     ])
 
