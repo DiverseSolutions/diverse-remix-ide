@@ -22,7 +22,7 @@ const profile = {
   name: 'blockchain',
   displayName: 'Blockchain',
   description: 'Blockchain - Logic',
-  methods: [],
+  methods: ['addProvider', 'removeProvider'],
   version: packageJson.version
 }
 
