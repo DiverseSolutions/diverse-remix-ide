@@ -89,7 +89,7 @@ export class RunTab extends ViewPlugin {
   }
 
   async onInitDone () {
-    const udapp = this
+    const udapp = this // eslint-disable-line
 
     await this.call('blockchain', 'addProvider', {
       name: 'Hardhat Provider',
