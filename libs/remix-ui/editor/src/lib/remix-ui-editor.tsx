@@ -4,7 +4,6 @@ import Editor, { loader } from '@monaco-editor/react'
 import { reducerActions, reducerListener, initialState } from './actions/editor'
 import { language, conf } from './syntax'
 import { cairoLang, cairoConf } from './cairoSyntax'
-import { ethers } from 'ethers'
 import './remix-ui-editor.css'
 
 type cursorPosition = {
