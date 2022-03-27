@@ -279,25 +279,18 @@ export const RemixUiHomeTab = (props: RemixUiHomeTabProps) => {
         <div className="border-bottom d-flex flex-column mr-4 pb-3 mb-3">
           <div className="d-flex justify-content-between ">
             <div className="mx-4 my-4 d-flex">
-              <label style={ { fontSize: 'xxx-large', height: 'auto', alignSelf: 'flex-end' } }>Remix IDE</label>
+              <label style={ { fontSize: 'xxx-large', height: 'auto', alignSelf: 'flex-end' } }>Diverse Remix IDE</label>
             </div>
             <div className="mr-4 d-flex">
-              <img className="mt-4 mb-2 remixui_home_logoImg" src="assets/img/guitarRemiCroped.webp" onClick={ () => playRemi() } alt=""></img>
-              <audio
+              <img className="mt-5 mb-0 remixui_home_logoImg" src="data:image/png;base64,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" alt=""></img>
+                <audio
                 id="remiAudio"
                 muted={false}
                 src="assets/audio/remiGuitar-single-power-chord-A-minor.wav"
                 ref={remiAudioEl}
               ></audio>
-            </div>
           </div>
-          <div>
-            <i className="pl-4 text-danger fas fa-exclamation-triangle"></i>
-            <span className="px-2 remixui_home_text text-danger mt-4 pt-4">
-              Scam Alert: Beware of online videos promoting "liquidity front runner bots".
-            </span>
-            <a className="remixui_home_text" target="__blank" href="https://medium.com/remix-ide/remix-in-youtube-crypto-scams-71c338da32d">Learn more</a>
-          </div>
+                </div>
         </div>
         <div className="row mx-2 mr-4" data-id="landingPageHpSections">
           <div className="ml-3">
@@ -355,20 +348,12 @@ export const RemixUiHomeTab = (props: RemixUiHomeTabProps) => {
               <div className="ml-4 pl-4">
                 <h4>Resources</h4>
                 <p className="mb-1">
-                  <i className="mr-2 fas fa-book"></i>
-                  <a className="remixui_home_text" target="__blank" href="https://remix-ide.readthedocs.io/en/latest/#">Documentation</a>
+                  <img id='remixHhomeWebsite' className="mr-2 remixui_home_image" src="https://www.dsolutions.mn/static/media/logo-no-text.8057f73a.png" style={ { filter: state.themeQuality.filter } } alt=''></img>
+                  <a className="remixui_home_text" target="__blank" href="https://github.com/DiverseSolutions">Diverse Github</a>
                 </p>
                 <p className="mb-1">
-                  <i className="mr-2 fab fa-gitter"></i>
-                  <a className="remixui_home_text" target="__blank" href="https://gitter.im/ethereum/remix">Gitter channel</a>
-                </p>
-                <p className="mb-1">
-                  <img id='remixHhomeWebsite' className="mr-2 remixui_home_image" src={ plugin.profile.icon } style={ { filter: state.themeQuality.filter } } alt=''></img>
-                  <a className="remixui_home_text" target="__blank" href="https://remix-project.org">Featuring website</a>
-                </p>
-                <p className="mb-1">
-                  <i className="mr-2 fab fa-ethereum remixui_home_image"></i>
-                  <label className="remixui_home_text" onClick={() => switchToPreviousVersion()}>Old experience</label>
+                  <img id='remixHhomeWebsite' className="mr-2 remixui_home_image" src="https://www.dsolutions.mn/static/media/logo-no-text.8057f73a.png" style={ { filter: state.themeQuality.filter } } alt=''></img>
+                  <a className="remixui_home_text" target="__blank" href="https://dsolutions.mn/">Diverse Website</a>
                 </p>
               </div>
             </div>
@@ -376,28 +361,6 @@ export const RemixUiHomeTab = (props: RemixUiHomeTabProps) => {
         </div>
         <div className="d-flex flex-column remixui_home_rightPanel">
           <div className="d-flex pr-3 py-2 align-self-end" id="remixIDEMediaPanelsTitle">
-            <button
-              className="btn-info p-2 m-1 border rounded-circle remixui_home_mediaBadge fab fa-twitter"
-              id="remixIDEHomeTwitterbtn"
-              title="Twitter"
-              onClick={(e) => {
-                setState(prevState => {
-                  return { ...prevState, showMediaPanel: state.showMediaPanel === 'twitter' ? 'none' : 'twitter' }
-                })
-                _paq.push(['trackEvent', 'pluginManager', 'media', 'twitter'])
-              }}
-            ></button>
-            <button
-              className="btn-danger p-2 m-1 border rounded-circle remixui_home_mediaBadge fab fa-medium"
-              id="remixIDEHomeMediumbtn"
-              title="Medium blogs"
-              onClick={(e) => {
-                setState(prevState => {
-                  return { ...prevState, showMediaPanel: state.showMediaPanel === 'medium' ? 'none' : 'medium' }
-                })
-                _paq.push(['trackEvent', 'pluginManager', 'media', 'medium'])
-              }}
-            ></button>
           </div>
           <div
             className="mr-3 d-flex bg-light remixui_home_panels"

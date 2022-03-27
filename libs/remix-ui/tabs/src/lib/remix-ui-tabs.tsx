@@ -40,7 +40,7 @@ export const TabsUI = (props: TabsUIProps) => {
 
     return (
       <div ref={el => { tabsRef.current[index] = el }} className={classNameTab} data-id={index === currentIndexRef.current ? 'tab-active' : ''} title={tab.tooltip}>
-        {tab.icon ? (<img className="my-1 mr-1 iconImage" style={{filter: invert}} src={tab.icon} />) : (<i className={classNameImg}></i>)}
+        {tab.icon ? (<img className="my-1 mr-1 iconImage" style={{filter: invert}} src="https://www.dsolutions.mn/static/media/logo-no-text.8057f73a.png" />) : (<i className={classNameImg}></i>)}
         <span className="title-tabs">{tab.title}</span>
         <span className="close-tabs" onClick={(event) => { props.onClose(index); event.stopPropagation() }}>
           <i className="text-dark fas fa-times"></i>
